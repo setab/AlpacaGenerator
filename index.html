@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>alpaca generator</title>
+  </head>
+  <body>
+    <div id="main_frame" class="main_frame">
+      <h1 class="header_text">alpaca generator</h1>
+      <div class="image_container" id="image_container">
+        <img
+          class="back"
+          id="back"
+          src="./alpaca/backgrounds/darkblue50.png"
+          alt=""
+        />
+        <img class="neck" id="neck" src="./alpaca/neck/default.png" alt="" />
+        <img class="eyes" id="eyes" src="./alpaca/eyes/default.png" alt="" />
+        <img class="ears" id="ears" src="./alpaca/ears/default.png" alt="" />
+        <img class="nose" id="nose" src="./alpaca/nose.png" alt="" />
+        <img class="hair" id="hair" src="./alpaca/hair/short.png" alt="" />
+        <img class="mouth" id="mouth" src="./alpaca/mouth/default.png" alt="" />
+
+        <img
+          class="headphones"
+          id="headphones"
+          src="./alpaca/accessories/headphone.png"
+          alt=""
+        />
+        <img class="legs" id="legs" src="./alpaca/leg/default.png" alt="" />
+      </div>
+      <div class="generator">
+        <div class="accesor">
+          <h1>accessorize the alpaca's</h1>
+          <button class="hair_button_style" onclick="ShowHairStyles()">
+            hair
+          </button>
+          <button class="ears_button_style" onclick="ShowEarStyle()">
+            ears
+          </button>
+          <button class="eyes_button_style" onclick="ShowEyesStyle()">
+            eyes
+          </button>
+          <button class="mouth_button_style" onclick="ShowMouthStyle()">
+            mouth
+          </button>
+          <button class="neck_button_style" onclick="ShowNeckStyle()">
+            neck
+          </button>
+          <button class="legs_button_style" onclick="ShowLegsStyle()">
+            legs
+          </button>
+          <button class="acces_button_style" onclick="ShowAccesStyle()">
+            accessories
+          </button>
+          <button class="background_button_style" onclick="ShowBackStyle()">
+            background
+          </button>
+        </div>
+        <div class="style">
+          <h1 class="header_style_txt">style</h1>
+          <div class="style_buttons"></div>
+        </div>
+      </div>
+      <div class="fotter">
+        <button class="random" onclick="randomGen()">random</button>
+        <button class="download" onclick="press()">download</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="./canvas.mjs"></script> -->
+  </body>
+</html>
